@@ -13,7 +13,7 @@ Now you should be able to reach the desired application at that specific subdoma
 
 There might also be some things you want to configure with the firewall. This can be done with a utility program `ufw` (uncomplicated firewall).
 
-This might first need to be enabled using `sudo ufw enable`, and then you want to add specific rules to allow this nginx instance to receive traffic  `sudo ufw allow 'Nginx Full`. Apart from this, after enabling the firewall, you probably also want to run `sudo ufw allow ssh`, to not stop yourself from being able to reconnect using SSH.
+This might first need to be enabled using `sudo ufw enable`, and then you want to add specific rules to allow this nginx instance to receive traffic  `sudo ufw allow 'Nginx Full'`. Apart from this, after enabling the firewall, you probably also want to run `sudo ufw allow ssh`, to not stop yourself from being able to reconnect using SSH.
 
 ## HTTPS / SSL
 
