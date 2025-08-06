@@ -1,7 +1,7 @@
 # Reverse Proxy
 
 ## Basic NGINX config
-To get started, create a nginx configuration file in `/etc/nginx/sites-available` called `desired-sub.domain.se`. Add configuration from the example given in this repo. I've removed the SSL stuff because it's managed automatically. 
+To get started, create a nginx configuration file in `/etc/nginx/sites-available` called `desired-sub.domain.se`, then create a hard link (`ln`) to `/etc/nginx/sites-enabled`. Add configuration from the example given in this repo. I've removed the SSL stuff because it's managed automatically. 
 
 To test the config without actually restarting the nginx server, run `sudo nginx -t`. 
 
@@ -17,7 +17,7 @@ This might first need to be enabled using `sudo ufw enable`, and then you want t
 
 ## HTTPS / SSL
 
-Install `certbot` and `python3-certbot-plugin` using apt or similar (`sudo apt install certbot python3-certbot-plugin`).
+Install `certbot` and `python3-certbot-nginx` using apt or similar (`sudo apt install certbot python3-certbot-nginx`).
 
 Run `sudo certbot --nginx -d desired-sub.domain.se`. 
 
